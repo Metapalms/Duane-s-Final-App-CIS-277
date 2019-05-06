@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cmath>
-#include <CoinFlip.h>
-#include "HangMan.h"
-#include "TicTacToe.h"
+#include <coinFlip.h>
+#include "hangMan.h"
+#include "ticTacToe.h"
 using namespace std;
 
 
