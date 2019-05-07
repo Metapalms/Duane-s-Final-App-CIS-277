@@ -1,10 +1,9 @@
-## Welcome to GitHub Pages Sorry way to depressed to do somethign with this right now 
+# Welcome to Arcade of Things GitHub Page
 
-Sorry way to depressed to do something with this right now.
+Do a Quick explanaton of how I created the program
 
-You can use the [editor on GitHub](https://github.com/Metapalms/Duane-s-Final-App-CIS-277/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
 
 ### Markdown
 
