@@ -52,7 +52,7 @@ The rates I used came from the BlackJack world series in 2018
 
 !image(picture of coinflip)
 
-Just a simple coinflip game. I am not sure but I planned on putting it into the TicTacToe against a bot to decide who woudl go first. 
+Just a simple coinflip game that I wanted to do before it was an assigment. I am not sure but I planned on putting it into the TicTacToe against a bot to decide who woudl go first. 
 
 
 ### TicTacToe
