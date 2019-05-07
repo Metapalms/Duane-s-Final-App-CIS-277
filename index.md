@@ -1,7 +1,10 @@
 # Welcome to Arcade of Things GitHub Page
 
-Do a Quick explanaton of how I created the program
+During times I would just get a random urge to create random little applets in C++. Because why not? 
 
+This "Final App" is just a culmination of a few of those apps. They have helped me not only bid my time. Whether during a long car ride, or  but also served at times a getaway from an emotional rollercoaster. It is funny how most of these programs I had written on reciept paper while working on fast lanes at Woodman's. 
+
+I figured why not turn this into my final app. 
 
 
 
