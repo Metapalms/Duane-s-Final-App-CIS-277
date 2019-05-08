@@ -7,6 +7,12 @@ This "Final App" is just a culmination of a few of those apps. They have helped 
 I figured why not turn this into my final app. and let some of you also enjoy what I have created.
 
 
+### Two people can try
+
+For this final I will be using [Link](https://repl.it/@Metapalms/Actual-Actual-C-276-Final)
+This is without the two player tic tac toe. I want to leave the two player tictactoe game out bceause I had created it before this class as a sort of exercise for myself (well all these other ones are too I guess). However, I remember having a little bit of a guide and ther will be similiar code other places. I do not want called for plagerism, so I am leaving it out of the final I am doing for school. I feel like I can do the bot one because for the most part they are not the same program in my eyes. The output may look the same but I added so much to the interior
+
+Never-the-less, if you would like one with two player tic tac toe [Link](https://repl.it/@Metapalms/Not-Actual-C-276-Final-Wish)
 
 
 ## Audience
@@ -55,12 +61,6 @@ The rates I used came from the BlackJack world series in 2018
 Just a simple coinflip game that I wanted to do before it was an assigment. I am not sure but I planned on putting it into the TicTacToe against a bot to decide who woudl go first. 
 
 
-### TicTacToe
-
-!image(ticTacToe)
-
-Again just a simple ticTacToe game with 2 players. You put the number in the box that you would like to mark
-
 
 ### TicTacToe w/ Bot 
 
@@ -69,7 +69,7 @@ Again just a simple ticTacToe game with 2 players. You put the number in the box
 This one I spent time on before focusing on the final and I found a lot of enjoyment out of it. Right now it is pretty good defencivly, however, I was not able to add complex moves in the end beacuse I started working on BlackJack which sort of bummbed me.
 
 
-## App CheckList
+#### App CheckList
 1. Your app meets a real world need
 2. Comments throughout the code explaining each function
 3. If you use input(s), validation
