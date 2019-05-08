@@ -33,7 +33,9 @@ Here you will simply be able to choose what game you would like to play.
 I had programmed these apps seperatly and individually at first. However, finding out about headers I was able to combine them pretty easily and when you choose one option it will simply just send you over seemlessly. (At least I hope)
 
 
-[### 21 BlackJack](https://repl.it/@Metapalms/BlackJack-20)
+### 21 BlackJack  
+[Link individual](https://repl.it/@Metapalms/BlackJack-20)
+
 Definitly my pride and joy out of these bunch of programs. This was the one I started purely for the purpose for the final and the rest are just thrown in there because I thought why not and it would be cool.
 
 I don't know why I had an urger to play and create 21 BlackJack, but I think it was because my friends were over and we wanted to play cards for some reason. I don't know how to play any other card game that well so we just decided a simple 21 BlackJack at first. I couldn't find the cards. So we played something else probably much better.
@@ -54,7 +56,8 @@ The rates I used came from the BlackJack world series in 2018
 - Surrender .5 mitiplier
 
 
-[### CoinFlip] (https://repl.it/@Metapalms/CoinFlip)
+### CoinFlip
+[Link individual] (https://repl.it/@Metapalms/CoinFlip)
 
 !image(picture of coinflip)
 
@@ -62,7 +65,8 @@ Just a simple coinflip game that I wanted to do before it was an assigment. I am
 
 
 
-[### TicTacToe w/ Bot] (https://repl.it/@Metapalms/TicTacToe-with-Bot) 
+### TicTacToe w/ Bot
+[Link individual] (https://repl.it/@Metapalms/TicTacToe-with-Bot) 
 
 !image (ticTacToe w/ bot)
 
