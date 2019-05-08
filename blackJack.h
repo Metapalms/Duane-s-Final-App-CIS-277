@@ -1,3 +1,4 @@
+#pragma once
 // BlackJack.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
@@ -55,7 +56,7 @@ void betUpDate();
 
 
 
-int main() {
+void blackJackProgram() {
 	//I like to set all varables which I plan to use at the beginning
 	int numberOfPlayers;
 	int turnsTaken = 0;
@@ -473,17 +474,6 @@ void drawCard(int whatPlayer, int turnsTaken) {
 	drawPile[randomNumber][randomNumber2] = "x";
 }
 
-
-//*********************************************************************
-//                      redoDeck
-//   If all cards have been drawn in drawCard(); it will call upon thi.
-//   It will redo all of the values for the cards
-//**********************************************************************
-
-void redoDeck() {
-
-
-}
 
 
 //*********************************************************************
@@ -1005,6 +995,73 @@ void betUpDate() {
 			playerValues[2][x] = 0;
 		}
 	}
+}
+
+
+
+//*********************************************************************
+//                      redoDeck
+//   If all cards have been drawn in drawCard(); it will call upon thi.
+//   It will redo all of the values for the cards
+//**********************************************************************
+
+void redoDeck() {
+  drawPile[0][0]= "A Spade   ";
+  drawPile[0][1]= "2 Spade   ";
+  drawPile[0][2]= "3 Spade   ";
+  drawPile[0][3]= "4 Spade   ";
+  drawPile[0][4]= "5 Spade   ";
+  drawPile[0][5]= "6 Spade   ";
+  drawPile[0][6]= "7 Spade   ";
+  drawPile[0][7]= "8 Spade   ";
+  drawPile[0][8]= "9 Spade   ";
+  drawPile[0][9]= "10 Spade  ";
+  drawPile[0][10]= "J Spade   ";
+  drawPile[0][11]= "Q Spade   ";
+  drawPile[0][12]= "K Spade   ";
+
+  drawPile[1][0]= "A Heart   ";
+  drawPile[1][1]= "2 Heart   ";
+  drawPile[1][2]= "3 Heart   ";
+  drawPile[1][3]= "4 Heart   ";
+  drawPile[1][4]= "5 Heart   ";
+  drawPile[1][5]= "6 Heart   ";
+  drawPile[1][6]= "7 Heart   ";
+  drawPile[1][7]= "8 Heart   ";
+  drawPile[1][8]= "9 Heart   ";
+  drawPile[1][9]= "10 Heart  ";
+  drawPile[1][10]= "J Heart   ";
+  drawPile[1][11]= "Q Heart   ";
+  drawPile[1][12]= "K Heart   ";
+
+  drawPile[2][0]= "A Diamond ";
+  drawPile[2][1]= "2 Diamond ";
+  drawPile[2][2]= "3 Diamond ";
+  drawPile[2][3]= "4 Diamond ";
+  drawPile[2][4]= "5 Diamond ";
+  drawPile[2][5]= "6 Diamond ";
+  drawPile[2][6]= "7 Diamond ";
+  drawPile[2][7]= "8 Diamond ";
+  drawPile[2][8]= "9 Diamond ";
+  drawPile[2][9]= "10 Diamond";
+  drawPile[2][10]= "J Diamond ";
+  drawPile[2][11]= "Q Diamond ";
+  drawPile[2][12]= "K Diamond ";
+
+  drawPile[3][0]= "A Club    ";
+  drawPile[3][1]= "2 Club    ";
+  drawPile[3][2]= "3 Club    ";
+  drawPile[3][3]= "4 Club    ";
+  drawPile[3][4]= "5 Club    ";
+  drawPile[3][5]= "6 Club    ";
+  drawPile[3][6]= "7 Club    ";
+  drawPile[3][7]= "8 Club    ";
+  drawPile[3][8]= "9 Club    ";
+  drawPile[3][9]= "10 Club   ";
+  drawPile[3][10]= "J Club    ";
+  drawPile[3][11]= "Q Club    ";
+  drawPile[3][12]= "K Club    ";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
