@@ -9,10 +9,11 @@ I figured why not turn this into my final app. and let some of you also enjoy wh
 
 ### Two people can try
 
-For this final I will be using [Link](https://repl.it/@Metapalms/Actual-Actual-C-276-Final)
+For this final I will be using [program without two player tic tac toe](https://repl.it/@Metapalms/Actual-Actual-C-276-Final)
+
 This is without the two player tic tac toe. I want to leave the two player tictactoe game out bceause I had created it before this class as a sort of exercise for myself (well all these other ones are too I guess). However, I remember having a little bit of a guide and ther will be similiar code other places. I do not want called for plagerism, so I am leaving it out of the final I am doing for school. I feel like I can do the bot one because for the most part they are not the same program in my eyes. The output may look the same but I added so much to the interior
 
-Never-the-less, if you would like one with two player tic tac toe [Link](https://repl.it/@Metapalms/Not-Actual-C-276-Final-Wish)
+Never-the-less, if you would like the program [with two player tic tac toe](https://repl.it/@Metapalms/Not-Actual-C-276-Final-Wish). There is the link
 
 
 ## Audience
