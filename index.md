@@ -34,7 +34,7 @@ I had programmed these apps seperatly and individually at first. However, findin
 
 
 ### 21 BlackJack  
-[Link individual](https://repl.it/@Metapalms/BlackJack-20)
+[Link individual] (https://repl.it/@Metapalms/BlackJack-20)
 
 Definitly my pride and joy out of these bunch of programs. This was the one I started purely for the purpose for the final and the rest are just thrown in there because I thought why not and it would be cool.
 
@@ -54,6 +54,14 @@ The rates I used came from the BlackJack world series in 2018
 - BlackJack 2.5 multiplier
 - Win 2 miltiplier 
 - Surrender .5 mitiplier
+
+
+### HangMan
+[Link individual] (https://repl.it/@Metapalms/other-hang-man)
+
+The old and trusty hangman game that we all loved so well and dearly. For this one you can only do words that are between 3 and 9 letters though saddly. I did not code for them to go more, because at first I had done it without doing an array and had a lot of stuff repeat over and over and over. It was very monotonous, but now it can be easily made so there can be more words.
+
+Along with that you only have 7 guesses in this version with pictures for each one. I have a little present if you loose xD
 
 
 ### CoinFlip
