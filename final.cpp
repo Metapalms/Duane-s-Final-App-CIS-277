@@ -29,7 +29,6 @@ int main() {
     cout << endl << "\t2. HangMan";
     cout << endl << "\t3. CoinFlip";
     cout << endl << "\t4. TicTacToe against Bot";
-    cout << endl << "\t5. TicTacToe";
 
     cout << endl << endl << "What would you like to do? ";
     
