@@ -1,6 +1,8 @@
+#pragma once
 #include <iostream>
 #include <thread>         // std::this_thread::sleep_for
 #include <chrono>         // std::chrono::seconds
+#include "coinFlip.h"
 using namespace std;
 
 char square[10] = {'0' , '1', '2', '3', '4', '5', '6', '7', '8', '9'};
@@ -10,23 +12,26 @@ int checkWin();
 void botMove();
 void board();
 
-int main() {
+void ticTacToeBotProgram() {
+  int order;
 
   cout << "Lets find out who is going to going to pick first.\n";
+  cout << "(0 for bot || 1 for you || 3 for coin flip): ";
+  cin >> order;
 
   //implement the heads or tails game from the other shit.
   //This will lead to a 50 50 chance of picking first or second
   //For now will just have it be hard coded with a varible
-  //1 will be he personwill play first
-  //2 will be the ai first
-  int order=0;
+  //1 will be he person will play first
+  //0 will be the ai first
+  if (order == 3)
+    order= doCoinFlipProgram();
 
   //so if order equals 0 we need to get the ai to pick a random place. But do I actually want it be a completely random place or not. Becuase when I play with friends there are common places where we place. And it is not random at all.
   //eh going to be the random
 
   if (order ==0)
   {
-    srand(time(NULL));
     int randNum = (rand() % 9) + 1;
     square[randNum] = 'O';
   }
@@ -46,14 +51,12 @@ int main() {
         board();
         cin.ignore();
         cin.get();
-        return 0;
       }
       else if (i == 0) {
         board();
         cout << "You failed to beat the bot";
         cin.ignore();
         cin.get();
-        return 0;
       }
     }
 
@@ -67,17 +70,16 @@ int main() {
         
         cin.ignore();
         cin.get();
-        return 0;
       }
       else if (i == 0) {
         
         cout << "Hey at least you tied the bot";
         cin.ignore();
         cin.get();
-        return 0;
       }
     }
   }while (i == -1);
+
 }
 
 
@@ -212,20 +214,24 @@ void botMove() {
   else if (square[5] == square [3] && square[7] == '7')
     square [7] = 'O';
   //Now that we have all the basic down we can think about complex moves that help prevent getting stuck in those situations were there are 2 options of which the other person is going to win. These I think will still be reactive
-  // _ _ X
-  // _ O _
-  // X _ _
+
 
   //this is just random if none of the other requirements are met
   else {
-    for( ; ; ) {
-      int randNum;
+    int randomNumber;
+    bool randAgain;
+    do {
+		  randomNumber = rand() % 9 +1;
 
-      if (square[randNum] == randNum) {
-        square[randNum] = 'O';
-        break; 
-      }
-    } 
+      if (square[randomNumber] == 'O')
+        randAgain = false;
+      else if (square[randomNumber] == 'X')
+        randAgain = false;
+      else 
+        randAgain = true;
+	  } while (randAgain);
+
+    square[randomNumber]= 'O';
   }
 }
 
