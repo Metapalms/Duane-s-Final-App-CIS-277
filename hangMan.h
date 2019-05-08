@@ -1,7 +1,10 @@
+#pragma once
 #include <iostream>
 using namespace std;
 #include <cmath>
 
+int checkGuess(int letterSpace, char guess, char blackSpace[]);
+/* OLD STUFF
 int checkGuess0(char , char blankSpaces[]);
 int checkGuess1(char , char blankSpaces[]);
 int checkGuess2(char , char blankSpaces[]);
@@ -11,6 +14,7 @@ int checkGuess5(char , char blankSpaces[]);
 int checkGuess6(char , char blankSpaces[]);
 int checkGuess7(char , char blankSpaces[]);
 int checkGuess8(char , char blankSpaces[]);
+*/
 void showMan0();
 void showMan1();
 void showMan2();
@@ -21,43 +25,70 @@ void showMan6();
 void gameOver();
 void buffer();
 
-int hangManProgram() 
+//the array for the testing of the if they have the right guess for the letter
+int test[9] = {0,0,0,0,0,0,0,0,0};
+
+
+
+
+void hangManProgram() 
 {
+  //just initilizign stuff I know form the start will need
   int numberLetters;
   char guess;
 
+  //getting input of number of letters for the word because I did not figure out a way to use str.length();
   cout << "How many letters are there in your word? (2-9) ";
   cin >> numberLetters;
   while(numberLetters <2 || numberLetters >9)
   {
+    cin.ignore();
     cout << "Please enter a valid number";
     cin >> numberLetters;
   }
 
+  //now they will enter the word
   char blankSpace[numberLetters];
   cin.ignore();
   cout << endl <<"Please enter the letters in the word in order:";
 
+  //this gets the word and places it in the right order
   cout << endl;
   for (int x=0; x < numberLetters; x++)
     cin >> blankSpace[x];
   
+
+  //these next two are just for confirmation for the user
   cout << endl;
-  for (int x=0; x < numberLetters; x++)
+  for (int x=0; x < numberLetters; x++) //cout the word
     cout << blankSpace[x];
   cout << endl;
-  for (int x=1; x <= numberLetters; x++)
+  for (int x=1; x <= numberLetters; x++) //cout the number under the word
     cout <<x;
-  // buffer();
+  buffer(); //comment out if testing so you can see the full thing
 
-  int test0=0, test1=0, test2=0, test3=0, test4=0, test5=0, test6=0, test7=0, test8=0;
+
+
+  for (int x = numberLetters; x < 9; x++) { //setes all not used numbers to 2
+    test[x] = 2;
+  }
+
+  //int test0=0, test1=0, test2=0, test3=0, test4=0, test5=0, test6=0, test7=0, test8=0; Previous stuff
   int amountWrong;
-  while (test0 == 0 || test1 == 0 || test2 == 0 || test3 == 0 || test4 == 0 || test5 == 0 || test6 == 0 || test7 == 0 || test8 == 0)
+  while (test[0] == 0 || test[1] == 0 || test[2] == 0 || test[3] == 0 || test[4] == 0 || test[5] == 0 || test[6] == 0 || test[7] == 0 || test[8] == 0)
   {
     cout << endl << endl;
     cout << "\nWhat is your guess? ";
     cin >> guess;
     
+
+    for (int x=0; x < numberLetters; x++) {
+      if (test[x] == 0)
+        test[x] = checkGuess(x, guess, blankSpace);
+      cout << test[x];
+    }
+
+    /* OLD STUFF THAT I JUST LIKE TO KEEP IN THERE
     if (test0 ==0)
       test0 = checkGuess0(guess, blankSpace);
       cout << test0;
@@ -85,9 +116,18 @@ int hangManProgram()
     if (test8 ==0)
       test8 = checkGuess8(guess, blankSpace);
       cout << test8;
-  
+    */
+
     cout << endl;
 
+    for (int x=0; x < numberLetters; x++) {
+      if (test[x] == 1)
+        cout << blankSpace[x];
+      else if (test[x] == 0)
+        cout << ".";
+    }
+
+    /* OLD STUFF THAT I JUST LIKE TO KEEP IN THERE
     if (test0 ==1)
       cout << blankSpace[0];
     else 
@@ -124,6 +164,7 @@ int hangManProgram()
       cout << blankSpace[8];
     else 
       cout << ".";
+    */
 
     cout << endl;
     for (int x=1; x <= numberLetters; x++)
@@ -157,12 +198,17 @@ int hangManProgram()
   }
 
   cout << "CONGRADULATIONS YOU WON!!!!!";
-
-  cin.ignore();
-  cin.get();
-  return 0;
 }
 
+int checkGuess(int letterSpace, char guess, char blackSpace[]) {
+  if (guess == blackSpace[letterSpace]) 
+    return 1;
+  else 
+    return 0;
+  
+}
+
+/*
 int checkGuess0(char guess, char blankSpace[])
 {
   if (guess == blankSpace[0])
@@ -252,7 +298,7 @@ int checkGuess8(char guess, char blankSpace[])
   else
     return 0;
 }
-
+*/
 
 void showMan6()
 {
